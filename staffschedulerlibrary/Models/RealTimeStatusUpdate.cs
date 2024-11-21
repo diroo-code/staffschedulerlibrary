@@ -35,12 +35,6 @@ namespace staffschedulerlibrary.Models
             // Default status update logic, can be overridden.
             Console.WriteLine("Status updated to: " + Status);
         }
-
-        // Override UpdateStatus to implement shift-specific logic
-        public virtual void UpdateStatus(Console console)
-        {
-            console.WriteLine($"Shift {Shift.ShiftId} status updated to: {Status} for staff {Staff.Name} at {UpdateTime}");
-        }
     }
 
 }
